@@ -12,8 +12,17 @@ module Lita
 
       http.post "/github-web-hooks", :receive_hook
 
+      def logger
+        Lita.logger
+      end
+
+      # If we get a push event, kill server so it can be restarted by the
+      # service manager
       on(:push) do |payload|
-        puts payload.inspect
+        if payload["refs"] =~ /master/
+          logger.info("Received push event, commiting suicide!")
+          Kernel.exit(0)
+        end
       end
 
       Lita.register_handler(Deploy)
