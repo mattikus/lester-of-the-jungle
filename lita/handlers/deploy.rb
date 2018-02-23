@@ -19,7 +19,7 @@ module Lita
       # If we get a push event, kill server so it can be restarted by the
       # service manager
       on(:push) do |payload|
-        if payload["refs"] =~ /master/
+        if payload["ref"] =~ /master/
           logger.info("Received push event, commiting suicide!")
           Kernel.exit(0)
         end
