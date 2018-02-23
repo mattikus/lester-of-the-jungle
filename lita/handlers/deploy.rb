@@ -21,7 +21,7 @@ module Lita
       on(:push) do |payload|
         if payload["ref"] =~ /master/
           logger.info("Received push event, commiting suicide!")
-          Kernel.exit(0)
+          exit!
         end
       end
 
