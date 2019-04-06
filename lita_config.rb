@@ -19,4 +19,6 @@ Lita.configure do |config|
   config.adapters.slack.parse = "full"
   config.adapters.slack.unfurl_links = true
   config.adapters.slack.unfurl_media = true
+
+  config.handlers.deploy.development_room = "#lester-development"
 end
