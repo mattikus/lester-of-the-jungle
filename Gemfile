@@ -6,6 +6,3 @@ gem "lita-slack"
 
 # extensions
 gem "lita-github-web-hooks-core"
-
-# plugins
-gem "lita-ai"

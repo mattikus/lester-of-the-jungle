@@ -3,7 +3,7 @@
 set -e -u -o pipefail
 
 echo ARGS="$@"
-env
+env | sort
 repo_url=https://github.com/mattikus/lester-of-the-jungle
 lita_dir=/lester
 
