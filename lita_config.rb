@@ -6,7 +6,7 @@ Lita.configure do |config|
 
   config.robot.log_level = :info
 
-  config.redis[:host] = "localhost"
+  config.redis[:host] = "redis"
 
   config.robot.adapter = :slack
   config.robot.admins = [
