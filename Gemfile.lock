@@ -46,7 +46,7 @@ GEM
       sawyer (~> 0.8.0, >= 0.5.3)
     public_suffix (3.0.3)
     puma (3.12.1)
-    rack (1.6.11)
+    rack (1.6.12)
     rb-readline (0.5.5)
     redis (4.1.0)
     redis-namespace (1.6.0)
