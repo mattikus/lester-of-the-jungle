@@ -48,7 +48,6 @@ GEM
     public_suffix (3.0.3)
     puma (5.1.1)
       nio4r (~> 2.0)
-    rack (1.6.11)
     rb-readline (0.5.5)
     redis (4.1.0)
     redis-namespace (1.6.0)
